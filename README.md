@@ -82,7 +82,7 @@ database : exampledb
 ```
 
 ## QGIS Connection
-QGIS can also be connected to the digital library and display shape files from the library. This allows easy access and distribution of data in the Digital Library. ArcGIS can also be connected to the digital library. The details for creating a connection to the library is found below
+<b>QGIS</b> can also be connected to the digital library and display shape files from the library. This allows easy access and distribution of data in the Digital Library. <b>ArcGIS</b> can also be connected to the digital library. The details for creating a connection to the library is found below
 
 ```
 service : database
