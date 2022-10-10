@@ -29,6 +29,7 @@ This project seeks to achieve the following
     <ol>
         <li>Design a simple GIS enabled database</li>
         <li>Simulate a cloud database with a docker container</li>
+        <li>Provide a graphic user interface (gui) for visual interactions with the cloud database</li>
         <li>Establish a connection betwwen the database in the docker container and user machine</li>
         <li>Populate the database using a Dockerfile and a python script</li>
         <li>Create a database service to which open source GIS tools can connect and access content</li>
@@ -57,10 +58,38 @@ Follow this up with the codes bellow.
 
 The output answers the question,
 
-### How many restaurants (franchises) are within a distance of one mile from the principal streets of U S A
+### How many restaurants (franchises) are within a distance of one mile from the principal streets of U.S.A?
 
 ```
 pip install -r requirements.txt
 python demo.py
 ```
+
+## GUI for Digital Library
+An Adminer docker container is provided for visual interactions with the digital library. Enter the link below in a browser after going through all the above processes.
+
+```
+http://localhost:8080/
+```
+This will ask for login credentials. Enter the credentials below
+
+```
+system : PostgreSQL
+server : database
+username : docker
+password : docker
+database : exampledb
+```
+
+## QGIS Connection
+QGIS can also be connected to the digital library and display shape files from the library. This allows easy access and distribution of data in the Digital Library. ArcGIS can also be connected to the digital library. The details for creating a connection to the library is found below
+
+```
+service : database
+host : 0.0.0.0
+database: exampledb
+username : docker
+password : docker
+```
+
 </p>
